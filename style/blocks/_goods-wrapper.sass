@@ -1,0 +1,56 @@
+.goods
+  &-wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    width: calc(100% - 348px)
+    float: right
+  &-item
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    position: relative
+    width: clamp(280px, 32.3%, 332px)
+    background: #FFFEFB
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02)
+    border-radius: 4px
+    margin-bottom: 16px
+    cursor: pointer
+.item
+  &-img
+    max-height: 200px
+    border-top-left-radius: 4px
+    border-top-right-radius: 4px
+  &-text
+    padding: 16px 16px 24px 16px
+    color: #3F3F3F
+  &-title
+    font-style: normal
+    font-weight: 600
+    font-size: clamp(15px, 1.7vw, 20px)
+    line-height: clamp(15px, 1.7vw, 25px)
+    margin-bottom: clamp(10px, 1.5vw, 16px)
+  &-description
+    font-size: clamp(14px, 1.5vw, 16px)
+    line-height: 20px
+    margin-bottom: clamp(16px, 2.4vw, 32px)
+  &-price
+    font-weight: 600
+    font-size: clamp(16px, 1.8vw, 24px)
+    line-height: 30px
+    margin: 0
+.trash
+  display: block
+  position: absolute
+  top: -9px
+  right: -9px
+  width: 32px
+  height: 32px
+  background: #FF8484
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1)
+  border-radius: 10px
+.br
+  display: none
+.arrow
+  width: 8px
+  height: 6px
