@@ -41,15 +41,14 @@
     padding: 11px
     text-align: center
     font-family: 'Inter'
-    font-size: clamp(10px, 2vw, 12px)
+    font-size: calc(max(10px, min(2vw, 12px)))
     line-height: 15px
     font-weight: 600
     letter-spacing: -0.02em
     color: #B4B4B4
     cursor: pointer
 .rectangle
-  background-image: url(/img/rectangle.svg)
-  background-repeat: no-repeat
+  background: url(/img/rectangle.svg) no-repeat
   width: 4px
   height: 4px
   display: inline-block

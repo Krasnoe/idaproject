@@ -20,20 +20,22 @@ const blockAdd = () => {
 blockAdd('.add-block');
 
 const addTrash = () => {
+
   const goodsItem = document.querySelectorAll('.goods-item');
 
-  goodsItem.forEach(item => {
-    const trash = document.createElement('img');
-    trash.className = 'trash';
-    trash.src = 'img/trash.svg';
+  const trash = document.createElement('img');
+  trash.className = 'trash';
+  trash.src = 'img/trash.svg';
 
+  goodsItem.forEach(item => {
     item.addEventListener('mouseover', () => {
       item.appendChild(trash);
     });
-
-    item.addEventListener('mouseout', () => {
-      item.removeChild(trash);
-    });
+  });
+  document.addEventListener('mouseover', event => {
+    if (!event.target.closest('.goods-item') && trash) {
+      trash.remove();
+    }
   });
 };
 addTrash();

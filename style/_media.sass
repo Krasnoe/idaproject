@@ -11,7 +11,7 @@
 @media (max-width: 1070px)
   .goods
     &-item
-      width: clamp(248px, 47%, 332px)
+      width: calc(max(248px, min(47%, 332px)))
 @media (max-width: 900px)
   .goods-container
     max-width: 700px
@@ -57,6 +57,11 @@
             top: -7px
           &:-ms-input-placeholder
             top: -7px
+  .trash
+    top: 2px
+    right: 2px
+    width: 28px
+    height: 28px
   .item
     &-text
       padding: 10px
